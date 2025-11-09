@@ -1,0 +1,8 @@
+<weatherReport>
+    <city>CityA</city>
+    <date>2025-11-08</date>
+    <temperature unit="C">27.4</temperature>
+    <humidity unit="%">65</humidity>
+    <windSpeed unit="km/h">12</windSpeed>
+    <condition>Sunny</condition>
+</weatherReport>

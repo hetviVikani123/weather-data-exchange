@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:element name="weatherReport">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="id" type="xs:string"/>
+<xs:element name="city" type="xs:string"/>
+<xs:element name="date" type="xs:date"/>
+<xs:element name="temperature">
+<xs:complexType>
+<xs:simpleContent>
+<xs:extension base="xs:decimal">
+<xs:attribute name="unit" type="xs:string" use="required"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element name="humidity">
+<xs:complexType>
+<xs:simpleContent>
+<xs:extension base="xs:decimal">
+<xs:attribute name="unit" type="xs:string" use="required"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element name="windSpeed">
+<xs:complexType>
+<xs:simpleContent>
+<xs:extension base="xs:decimal">
+<xs:attribute name="unit" type="xs:string" use="required"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element name="condition" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

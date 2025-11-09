@@ -1,0 +1,9 @@
+<weatherReport>
+<id>sample-1</id>
+<city>CityA</city>
+<date>2025-11-08</date>
+<temperature unit="C">24.5</temperature>
+<humidity unit="%">60</humidity>
+<windSpeed unit="km/h">15</windSpeed>
+<condition>Sunny</condition>
+</weatherReport>
